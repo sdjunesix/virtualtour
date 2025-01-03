@@ -83,8 +83,6 @@
 			<cube url="panos/360img_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,512" />
 		</image>
 
-		<hotspot name="spot1580821085" style="skin_hotspotstyle" ath="29.582" atv="-7.799" depth="1000.0" linkedscene="scene_360img_2" linkedscene_lookat="0.0,0.0,120.0" />
-
 	</scene>
 
 	<scene name="scene_360img_2" title="360img_2" onstart="" thumburl="panos/360img_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
@@ -99,9 +97,6 @@
 			<cube url="panos/360img_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304" />
 		</image>
 
-		<hotspot name="spot1580821447" style="skin_hotspotstyle" ath="-8.209" atv="-4.957" depth="1000.0" linkedscene="scene_360img_3" linkedscene_spot="spot1580821764" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1580822093" style="skin_hotspotstyle" ath="124.662" atv="-8.675" depth="1000.0" linkedscene="scene_360img_1" linkedscene_lookat="0.0,0.0,120.0" />
-
 	</scene>
 
 	<scene name="scene_360img_3" title="360img_3" onstart="" thumburl="panos/360img_3.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
@@ -115,8 +110,6 @@
 		<image>
 			<cube url="panos/360img_3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
 		</image>
-
-		<hotspot name="spot1580821764" style="skin_hotspotstyle" ath="171.791" atv="-4.957" depth="1000.0" linkedscene="scene_360img_2" linkedscene_spot="spot1580821447" linkedscene_hoffset="0.0" use3dtransition="true" />
 
 	</scene>
 
