@@ -42,6 +42,7 @@ var data = {
         }
       ],
       "faceSize": 4096,
+      "source": "./360img/360img_1.jpg",
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -91,6 +92,7 @@ var data = {
         }
       ],
       "faceSize": 4096,
+      "source": "./360img/360img_2.jpg",
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
@@ -140,6 +142,7 @@ var data = {
         }
       ],
       "faceSize": 4096,
+      "source": "./360img/360img_3.jpg",
       "initialViewParameters": {
         "pitch": 0,
         "yaw": 0,
