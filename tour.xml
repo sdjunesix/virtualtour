@@ -31,7 +31,7 @@
 	               tooltips_thumbs="false"
 	               tooltips_hotspots="false"
 	               tooltips_mapspots="false"
-	               deeplinking="true"
+	               deeplinking="false"
 	               loadscene_flags="MERGE"
 	               loadscene_blend="OPENBLEND(1.0, -0.5, 0.3, 0.8, linear)"
 	               loadscene_blend_prev="SLIDEBLEND(0.5, 180, 0.75, linear)"
@@ -75,19 +75,19 @@
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
-		<view hlookat="0.000" vlookat="0.000" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+		<view hlookat="0.0" vlookat="0.0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
 
 		<preview url="panos/360img_1.tiles/preview.jpg" />
 
-		<image>
-			<cube url="panos/360img_1.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,512" />
+		<image hfov="1.00" vfov="0.384000" voffset="0.00">
+			<flat url="panos/360img_1.tiles/l%l/%v/l%l_%v_%h.jpg" multires="512,2048x786" />
 		</image>
 
-		<hotspot name="spot1580821085" style="skin_hotspotstyle" ath="29.582" atv="-7.799" depth="1000.0" linkedscene="scene_360img_2" linkedscene_lookat="0.0,0.0,120.0" />
+		<hotspot name="spot1581633317" style="skin_hotspotstyle" ath="0.102" atv="0.092" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_360img_2" linkedscene_lookat="0.0,0.0,0.5" />
 
 	</scene>
 
-	<scene name="scene_360img_2" title="360img_2" onstart="" thumburl="panos/360img_2.tiles/thumb.jpg" lat="" lng="" alt="" heading="">
+	<scene name="scene_360img_2" title="360img_2" onstart="" thumburl="panos/360img_2.tiles/thumb.jpg" lat="47.02626111" lng="28.82411111" alt="0.00" heading="0.0">
 		
 		<control bouncinglimits="calc:image.cube ? true : false" />
 
@@ -95,12 +95,11 @@
 
 		<preview url="panos/360img_2.tiles/preview.jpg" />
 
-		<image>
-			<cube url="panos/360img_2.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1152,2304" />
+		<image hfov="1.00" vfov="0.372500" voffset="0.00">
+			<flat url="panos/360img_2.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,2560x954,5120x1908,9984x3720" />
 		</image>
 
-		<hotspot name="spot1580821447" style="skin_hotspotstyle" ath="-8.209" atv="-4.957" depth="1000.0" linkedscene="scene_360img_3" linkedscene_spot="spot1580821764" linkedscene_hoffset="360.0" use3dtransition="true" />
-		<hotspot name="spot1580822093" style="skin_hotspotstyle" ath="124.662" atv="-8.675" depth="1000.0" linkedscene="scene_360img_1" linkedscene_lookat="0.0,0.0,120.0" />
+		<hotspot name="spot1581633687" style="skin_hotspotstyle" ath="0.384" atv="0.026" depth="1000.0" distorted="false" zoom="false" linkedscene="scene_360img_3" linkedscene_hoffset="0.0" use3dtransition="true" />
 
 	</scene>
 
@@ -112,11 +111,9 @@
 
 		<preview url="panos/360img_3.tiles/preview.jpg" />
 
-		<image>
-			<cube url="panos/360img_3.tiles/%s/l%l/%v/l%l_%s_%v_%h.jpg" multires="512,640,1280" />
+		<image hfov="1.00" vfov="0.383387" voffset="0.00">
+			<flat url="panos/360img_3.tiles/l%l/%0v/l%l_%0v_%0h.jpg" multires="512,1536x590,3072x1178,5888x2258" />
 		</image>
-
-		<hotspot name="spot1580821764" style="skin_hotspotstyle" ath="171.791" atv="-4.957" depth="1000.0" linkedscene="scene_360img_2" linkedscene_spot="spot1580821447" linkedscene_hoffset="0.0" use3dtransition="true" />
 
 	</scene>
 
