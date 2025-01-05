@@ -1,0 +1,44 @@
+.container-overall {
+    position: fixed;
+    top: 30px;
+    left: 15px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: 12;
+    background-image: linear-gradient(45deg, #c41c0094, #0073c2d1);
+    color: white;
+    min-width: 300px;
+    border-radius: 0.25rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.container-overall .item:hover {
+    color: orange;
+}
+
+.container-overall .item:active {
+    color: orange;
+}
+
+.container-item-contract {
+    position: fixed;
+    z-index: 12;
+    right: 15px;
+    bottom: 75px;
+    background-image: linear-gradient(45deg, #6bcff6, #0d4494);
+    border-radius: 100%;
+    padding: 12px 12px;
+    cursor: pointer;
+}
+
+.text-small {
+    font-size: 12px;
+}
+
+textarea {
+    resize: none;
+    min-height: 120px;
+}

@@ -12,17 +12,211 @@
 		html { height:100%; }
 		body { height:100%; overflow:hidden; margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#FFFFFF; background-color:#000000; }
 	</style>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
 <script src="tour.js"></script>
-
+<link rel="stylesheet" href="./plugins/styles.css">
+<div class="container-overall p-3">
+	<div id="player">
+		<audio controls autoplay loop hidden id="player-audio">
+			 <source src="./plugins/emotional-piano-music.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+	<div id="accordion">
+		<div>
+			<div id="heading-1">
+			<h5 class="mb-0">
+				<button class="btn btn-link text-white text-uppercase d-flex align-items-center w-100" data-toggle="collapse" data-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+					Overall project <i class="fa fa-fw fa-angle-down ml-auto"></i>
+				</button>
+			</h5>
+			</div>
+			<div id="collapse-1" class="collapse show" aria-labelledby="heading-1" data-parent="#accordion">
+			<div class="p-2">
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(1)"><i class="fa fa-fw fa-caret-right mr-2"></i>Overview</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(1)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 1</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(2)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 2</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(3)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 3</div>
+			</div>
+			</div>
+		</div>
+		<div>
+			<div id="heading-2">
+			<h5 class="mb-0">
+				<button class="btn btn-link text-white text-uppercase d-flex align-items-center w-100" data-toggle="collapse" data-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+					Product <i class="fa fa-fw fa-angle-right ml-auto"></i>
+				</button>
+			</h5>
+			</div>
+			<div id="collapse-2" class="collapse" aria-labelledby="heading-2" data-parent="#accordion">
+			<div class="p-2">
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(1)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 1</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(2)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 2</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(3)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 3</div>
+			</div>
+			</div>
+		</div>
+		<div>
+			<div id="heading-3">
+			<h5 class="mb-0">
+				<button class="btn btn-link text-white text-uppercase d-flex align-items-center w-100" data-toggle="collapse" data-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+					Urban Area <i class="fa fa-fw fa-angle-right ml-auto"></i>
+				</button>
+			</h5>
+			</div>
+			<div id="collapse-3" class="collapse" aria-labelledby="heading-3" data-parent="#accordion">
+			<div class="p-2">
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(1)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 1</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(2)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 2</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(3)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 3</div>
+			</div>
+			</div>
+		</div>
+		<div>
+			<div id="heading-4">
+			<h5 class="mb-0">
+				<button class="btn btn-link text-white text-uppercase d-flex align-items-center w-100" data-toggle="collapse" data-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
+					Utilities <i class="fa fa-fw fa-angle-right ml-auto"></i>
+				</button>
+			</h5>
+			</div>
+			<div id="collapse-4" class="collapse" aria-labelledby="heading-4" data-parent="#accordion">
+			<div class="p-2">
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(1)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 1</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(2)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 2</div>
+				<div class="item cursor-pointer pt-1 pb-1 pl-2" onclick="redirectToItem(3)"><i class="fa fa-fw fa-caret-right mr-2"></i>Item 3</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div id="pano" style="width:100%;height:100%;">
 	<noscript><table style="width:100%;height:100%;"><tr style="vertical-align:middle;"><td><div style="text-align:center;">ERROR:<br/><br/>Javascript not activated<br/><br/></div></td></tr></table></noscript>
 	<script>
 		embedpano({xml:"tour.xml", target:"pano", passQueryParameters:"startscene,startlookat"});
 	</script>
 </div>
+
+<div class="container-item-contract" data-toggle="modal" data-target="#modal">
+	<i class="fa-solid fa-envelope text-white fa-xl"></i>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title">Contact</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+		  <div class="row">
+			<div class="col">
+				<label class="mb-1 font-weight-bold text-small">Name *</label>
+				<input type="text" class="form-control" required>
+				<label class="mb-1 font-weight-bold text-small mt-3">Phone *</label>
+				<input type="text" class="form-control" required>
+				<label class="mb-1 font-weight-bold text-small mt-3">Email *</label>
+				<input type="email" class="form-control" required>
+				<label class="mb-1 font-weight-bold text-small mt-3">Inquiry *</label>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="customCheck1">
+					<label class="custom-control-label" for="customCheck1">
+						Land for lease<br>
+						<small>(Min 10.000m2)</small>
+					</label>
+				</div>
+				<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="customCheck2">
+					<label class="custom-control-label" for="customCheck2">
+						Workshop for lease<br>
+						<small>(Min 2.500m2)</small>
+					</label>
+				</div>
+				<label class="mb-1 font-weight-bold text-small mt-3">Company nationality *</label>
+				<select class="form-control" required>
+					<option value="vn">Viet Nam</option>
+				</select>
+			</div>
+			<div class="col">
+				<label class="mb-1 font-weight-bold text-small">Company type *</label>
+				<select class="form-control" required>
+					<option value="1">Manufacturer</option>
+					<option value="2">Consulting company</option>
+				</select>
+				<label class="mb-1 font-weight-bold text-small mt-3">Company name *</label>
+				<input type="text" class="form-control" required>
+				<label class="mb-1 font-weight-bold text-small mt-3">Bussiness *</label>
+				<select class="form-control" required>
+					<option value="1">Apparel (clothing, footwear, fashion accessories)</option>
+					<option value="2">Beverage processing &amp; manufacturing</option>
+					<option value="3">Building materials</option>
+					<option value="4">Car &amp; motor vehicles</option>
+					<option value="5">Cigarette</option>
+					<option value="6">Chemicals and chemical products</option>
+					<option value="7">Electrical equipments</option>
+					<option value="8">Electronic, computer, optical devices</option>
+					<option value="9">Equipment repair, mainenance &amp; installation</option>
+					<option value="11">Fabricated metal products (except machinery and equipments)</option>
+					<option value="12">Food processing &amp; manufacturing</option>
+					<option value="13">Furnitures &amp; Fixtures</option>
+					<option value="14">Industrial machinery &amp; equipment</option>
+					<option value="15">Leather and leather-related products</option>
+					<option value="16">Logistics</option>
+					<option value="17">Metal production</option>
+					<option value="18">Non-metallic mineral products</option>
+					<option value="19">Other processing &amp; manufacturing industry</option>
+					<option value="20">Paper and paper-related products</option>
+					<option value="21">Pharmaceutical products</option>
+					<option value="25">Real estate business</option>
+					<option value="26">Rubber &amp; plastic products</option>
+					<option value="27">Textiles</option>
+				</select>
+				<label class="mb-1 font-weight-bold text-small mt-3">Area *</label>
+				<input type="text" class="form-control" required>
+			</div>
+			<div class="col-12">
+				<label class="mb-1 font-weight-bold text-small mt-3">Note *</label>
+				<textarea class="form-control"></textarea>
+			</div>
+		  </div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		  <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+		</div>
+	  </div>
+	</div>
+</div>
+
+<script>
+	// <![CDATA[
+	function krpano() {
+		return document.getElementById("krpanoSWFObject");
+	}
+
+	function redirectToItem(id) {
+		krpano().call("loadscene(scene_360img_" + id + ", null, MERGE, BLEND (1));");
+		musicPlay();
+	}
+
+	function musicPlay() {
+		const audio = document.getElementById('player-audio');
+		audio.pause();
+		audio.currentTime = 0;
+		audio.play();
+	}
+	// ]]>
+</script>
 
 </body>
 </html>
